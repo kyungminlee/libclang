@@ -2574,7 +2574,7 @@ class Type(Structure):
         For reference types (e.g., "const int&"), returns the type that
         the reference refers to (e.g "const int").
         """
-        return conf.lib.clang_getNonRerenceType(self)
+        return conf.lib.clang_getNonReferenceType(self)
 
     def get_unqualified_type(self):
         """
